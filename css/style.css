@@ -99,13 +99,10 @@ img{
 
 @media screen and (max-width: 668px) {
   body {
-    background-image: none;
+    background-image: url(../Image/Port.png);
   }
   img{
-    width: 180px;
-    height: auto;
-    top: 0;
-    left: 10%;
+    display: none;
   }
   
 }
