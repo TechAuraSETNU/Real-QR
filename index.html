@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techaura Night Fest</title>
+    <link rel="stylesheet" href="css/flipdown.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/flipdown.js"></script>
+</head>
+<body>
+    <div class="timer">
+        <div id="flipdown" class="flipdown"></div>
+    </div>
+    <img src="./Image/LOGO.png"></img>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const targetDate = new Date("2023-11-03T17:30:00"); // November 3, 2023, 5:30 PM
+            const targetTimestamp = Math.floor(targetDate.getTime() / 1000);
+            let flipdown = new FlipDown(targetTimestamp)
+                .start()
+                .ifEnded(() => {
+                    document.querySelector(".flipdown").innerHTML = `<h2>FUN HAS BEGUN!</h2>`;
+                });
+        });
+    </script>
+</body>
+
+</html>
+</body>
+</html>
