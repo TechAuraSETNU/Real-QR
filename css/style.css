@@ -100,6 +100,8 @@ img{
 @media screen and (max-width: 668px) {
   body {
     background-image: url(../Image/Port.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   img{
     width: 180px;
